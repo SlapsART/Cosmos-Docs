@@ -6,18 +6,28 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'My Docs',
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
+			title: 'DS Docs',
+			social: [
+				{ icon: 'npm', label: 'npm', href: 'https://www.npmjs.com/package/@sinco/react?activeTab=readme'},
+				{ icon: 'github', label: 'GitHub', href: ''},
+			],
 			sidebar: [
 				{
-					label: 'Guides',
+					label: 'Instalación - DEV', slug: 'introduccion/dev'
+				},
+				{
+					label: 'Instalación',
 					items: [
 						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
+						{ label: 'Desarrolladores', slug: 'guides/example' },
 					],
 				},
 				{
-					label: 'Reference',
+					label: 'Componentes',
+					autogenerate: { directory: 'reference' },
+				},
+				{
+					label: 'Documentos',
 					autogenerate: { directory: 'reference' },
 				},
 			],
