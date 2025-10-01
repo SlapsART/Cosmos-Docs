@@ -33,8 +33,8 @@ export default defineConfig({
 			],
 		}),
 	],
-	site: 'https://SlapsART.github.io/COSMOS-DOCS.git',
+/*	site: 'https://SlapsART.github.io/COSMOS-DOCS.git',
 	base: '/COSMOS-DOCS',
-	// otros settings…
+	// otros settings…*/
 });
 
