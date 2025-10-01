@@ -34,7 +34,7 @@ export default defineConfig({
 		}),
 	],
 	site: 'https://SlapsART.github.io/COSMOS-DOCS.git',
-	base: '/COSMOS-DOCS',
+	base: '/COSMOS-DOCS/src/pages/index.mdx',
 	// otros settings…
 });
 
